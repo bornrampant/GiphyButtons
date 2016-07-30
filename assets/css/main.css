@@ -28,7 +28,7 @@ body{
 
 
 h1 {
-      font-family: 'Amatica SC', cursive, center;
+      font-family: 'Doppio One', sans-serif;
       lighting-color: yellow;
       border-color: white;
       color: yellow ;
@@ -37,12 +37,15 @@ h1 {
 
 h2 {
       font-family: 'Amatica SC', cursive, center;
-      lighting-color: white;
-      border-color: white;
-      color: white;
+      color: purple;
       font-size: 45px;
       position: left;
       float: right;
+}
+h3 {
+      font-family: 'Doppio One', sans-serif;
+      color: pink;
+      font-size: 45px;
 }
 
 img {
