@@ -1,10 +1,15 @@
 //	Variables > objects > functions > onclicks
+//	testString.
+//       * Jump to definition = ``Alt+Click``
+//       * Jump to definition = ``Control+Windows+Alt+Up``
+//       * Go back = ``Control+Windows+Alt+Left``
+//       * Manual CodeIntel = ``Control+Shift+space
 
 $(function() {
-    console.log( "ready!" );
-    console.log(animal);
-    console.log(value);
-    console.log(button)
+    // console.log( "ready!" );
+    // console.log(animal);
+    // console.log(value);
+    // console.log(button)
 
 	var animalCount = 0;
 
@@ -37,31 +42,36 @@ $(function() {
 
 		// Create new <p> tag hold a animalitem; unique identifier list #. 
 		animal = $("<p>");
+
+		//10 images of the search
+		// for (i = 0; i < animal.length; i++) { 
+		//     text += animal[i] + "<p>";
+		// }
 	
-		// Then give it an ID of the form: number is equal to animalCount.
+		// ID of the form: number is equal to animalCount.
 		animal.attr("id", "item-" + animalCount);
 
 		//append the animal text to <p> 
 		animal.prepend(value);
 
 		//  based on what number it is in the list.
-	 	var button = $("<button>")
+	 	var button = $("<button>");
 	 	button.attr("id", "item-" + animalCount);
 
 		//  data-animal "checkbox".
-		button.attr("data-animal", animalCount)
-		button.addClass("checkbox") 
-		button.text("X")
-		animal.append(button)
+		button.attr("data-animal", animalCount);
+		button.addClass("checkbox"); 
+		button.text("X");
+		animal.append(button);
 
 		// Add the button before animal item to the "animals" div
-		$("#animals").prepend(animal)
+		$("#animals").prepend(animal);
 
 		// Clear
-		$("#animal").val("")
+		$("#animal").val("");
 
 		// Add 
-		animalCount++
+		animalCount++;
 
 		// No Refreshing (return false)
 		return false;
@@ -79,6 +89,7 @@ $(function() {
 		// Empty specific <p> element 
 		var id = this.id;
 		$("#" + id).remove();
+		//Remove images aswell
 
 
 	});

@@ -9,11 +9,15 @@
 }
 .group {
   clear: both;
-  *zoom: 1;
+  zoom: 1;
 }
 
 body{
   background: black;
+}
+
+footer{
+  background-image: url("https://media3.giphy.com/media/jNCT0DtwX6GFG/200.gif");
 }
 
 .jumbotron{
@@ -22,36 +26,26 @@ body{
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: pink;
     text-shadow: black 0.3em 0.3em 0.3em;
 }
 
 
 h1 {
       font-family: 'Doppio One', sans-serif;
-      lighting-color: yellow;
-      border-color: white;
-      color: yellow ;
       float: left;
 }
 
 h2 {
       font-family: 'Amatica SC', cursive, center;
-      color: purple;
+      color: black;
       font-size: 45px;
       position: left;
       float: right;
 }
 h3 {
       font-family: 'Doppio One', sans-serif;
-      color: pink;
+      color: purple;
       font-size: 45px;
 }
 
-img {
-  padding: 20px 0px 100px 0;
-}
-footer{
-  position
-
-}
