@@ -1,0 +1,44 @@
+<!-- HTML (wire only)> CSS Reset > BOOTSTRAP > (BOOTSWATCH)> my CSS  > Media Queries > jQuery> JAVASCRIPT (object oriented) > finish HTML  -->
+<!-- GIPHY parameters 
+q
+limit
+rating --> -->
+<!-- Instructions
+array of strings, each one related to a topic that interests you. Save it to a variable called topics.
+take the topics in this array and create buttons in your HTML.
+loop that appends a button for each string in the array.
+button grab 10 static, non-animated gif images from the GIPHY API and place them on the page.
+gif should animate. If the user clicks the gif again, it should stop playing.
+Under every gif, display its rating (PG, G, so on).
+Add a form to your page takes the value from a user input box and adds it into your topics array. Then make a function call that takes each topic in the array remakes the buttons on the page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://use.fontawesome.com/a7ef4c2399.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Amatica+SC:400,700' rel='stylesheet' type='text/css'>
+  <title>Animaltastic</title>
+</head>
+<body>
+
+<!-- Title -->
+<div class="jumbotron"><h1>Animaltastic</h1>
+</div>    
+      <form>
+      <h2>Add an animal <input type="text" id="animal"><input type="submit" value="Add Item" id="addAnimal"></h2>
+    </form>
+
+
+<!-- Images/Buttons -->
+<div id="animals">
+<div id="giphy">
+</div>
+  
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src='assets/js/animals.js'></script>
+</body>
+</html>

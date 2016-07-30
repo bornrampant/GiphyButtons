@@ -1,0 +1,54 @@
+/*  Clearfix*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+body{
+  background: black;
+}
+
+.jumbotron{
+    margin-bottom: 0px;
+    background-image: url("https://media3.giphy.com/media/jNCT0DtwX6GFG/200.gif");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+
+h1 {
+      font-family: 'Amatica SC', cursive, center;
+      lighting-color: yellow;
+      border-color: white;
+      color: yellow ;
+      float: left;
+}
+
+h2 {
+      font-family: 'Amatica SC', cursive, center;
+      lighting-color: white;
+      border-color: white;
+      color: white;
+      font-size: 45px;
+      position: left;
+      float: right;
+}
+
+img {
+  padding: 20px 0px 100px 0;
+}
+footer{
+  position
+
+}
